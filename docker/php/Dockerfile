@@ -33,7 +33,7 @@ ENV PATH $PATH:/composer/vendor/bin
 WORKDIR /var/www
 
 # laravelインストール
-RUN composer global require "laravel/installer"
+# RUN composer global require "laravel/installer"
 
 # node、npmのインストール
 RUN apt install -y nodejs npm
