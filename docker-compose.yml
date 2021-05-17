@@ -45,6 +45,7 @@ services:
     links:
       - db
     ports:
+    # コンテナのポートが4桁だとなぜか起動しない     
       - 8080:80
     volumes:
       - /sessions
