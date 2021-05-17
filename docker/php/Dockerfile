@@ -29,7 +29,7 @@ ENV COMPOSER_HOME /composer
 # vender配下のbinにPATHを通す(ここに配置したcomposerを使用する)
 ENV PATH $PATH:/composer/vendor/bin
 
-# nodeインストール
+# nodeインストール(aptだとNodejsは古いため、パッケージマネージャの n を使用してインストール)
 RUN apt install -y npm \
   && npm install n -g \
   && n 12
