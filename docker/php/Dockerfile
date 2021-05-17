@@ -29,8 +29,10 @@ ENV COMPOSER_HOME /composer
 # vender配下のbinにPATHを通す(ここに配置したcomposerを使用する)
 ENV PATH $PATH:/composer/vendor/bin
 
+# nodeインストール
+RUN apt install -y npm \
+  && npm install n -g \
+  && n 12
+
 # RUN , CMD , ENTRYPOINT , COPY , ADD を実行する時のワーキングディレクトリを指定
 WORKDIR /var/www
-
-# nodeインストール
-RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
