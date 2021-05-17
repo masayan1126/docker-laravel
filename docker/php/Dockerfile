@@ -32,10 +32,5 @@ ENV PATH $PATH:/composer/vendor/bin
 # RUN , CMD , ENTRYPOINT , COPY , ADD を実行する時のワーキングディレクトリを指定
 WORKDIR /var/www
 
-# laravelインストール
-# RUN composer global require "laravel/installer"
-
-# node、npmのインストール
-RUN apt install -y nodejs npm
-
-# phpコンテナで⇨を実行 composer require laravel/jetstream && php artisan jetstream:install livewire && php artisan migrate && npm install && npm run dev
+# nodeインストール
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
