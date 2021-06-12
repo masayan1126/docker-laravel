@@ -34,6 +34,23 @@ services:
       - ./docker/db/sql:/docker-entrypoint-initdb.d
     ports:
       - 3306:3306
+  
+  db-test:
+    image: mysql:latest
+    container_name: db-test
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      # .envファイルの「DB_DATABASE」と合わせる
+      MYSQL_DATABASE: recipe_test_db
+      TZ: "Asia/Tokyo"
+      # 文字コード指定
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    volumes:
+      - ./docker/db-test/data:/var/lib/mysql
+      - ./docker/db-test/my.cnf:/etc/mysql/conf.d/my.cnf
+      - ./docker/db-test/sql:/docker-entrypoint-initdb.d
+    ports:
+      - 3307:3306
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
@@ -50,6 +67,23 @@ services:
       - 8080:80
     volumes:
       - /sessions
+  
+  phpmyadmin-test:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin-test
+    environment:
+      - PMA_ARBITRARY=1
+      - PMA_HOST=db-test
+      - PMA_USER=root
+      - PMA_PASSWORD=root
+    links:
+      - db-test
+    ports:
+      # コンテナのポートが4桁だと起動しない
+      - 8889:80
+    volumes:
+      - /sessions
+  
   mailcatcher:
     image: schickling/mailcatcher
     ports:
