@@ -24,7 +24,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
       # .envファイルの「DB_DATABASE」とMYSQL_DATABASEを合わせる
-      MYSQL_DATABASE: test_db
+      MYSQL_DATABASE: performance_db
       TZ: "Asia/Tokyo"
       # 文字コード指定
     command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
@@ -41,7 +41,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
       # .envファイルの「DB_DATABASE」と合わせる
-      MYSQL_DATABASE: recipe_test_db
+      MYSQL_DATABASE: test_db
       TZ: "Asia/Tokyo"
       # 文字コード指定
     command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
