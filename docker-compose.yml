@@ -23,7 +23,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
       # .envファイルの「DB_DATABASE」とMYSQL_DATABASEを合わせる
-      MYSQL_DATABASE: performance_db
+      MYSQL_DATABASE: sample_db
       TZ: "Asia/Tokyo"
       # 文字コード指定
     command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
@@ -39,7 +39,7 @@ services:
     container_name: phpmyadmin-dl
     environment:
       - PMA_ARBITRARY=1
-      - PMA_HOST=db
+      - PMA_HOST=db-dl
       - PMA_USER=root
       - PMA_PASSWORD=root
     links:
