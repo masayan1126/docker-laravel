@@ -1,26 +1,25 @@
-# docker-compose build
 version: "3.8"
 
 services:
-  app:
-    container_name: php
+  app-dl:
+    container_name: app-dl
     build: ./docker/php
     volumes:
       - ./:/var/www
 
-  web:
-    container_name: nginx
+  web-dl:
+    container_name: nginx-dl
     image: nginx
     ports:
-      - 8000:8000
+      - 8500:8000
     volumes:
       - ./:/var/www
       - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
 
-# .envファイルの「DB_HOST」とサービス名を合わせる
-  db:
+  # .envファイルの「DB_HOST」とサービス名を合わせる
+  db-dl:
     image: mysql:latest
-    container_name: db
+    container_name: db-dl
     environment:
       MYSQL_ROOT_PASSWORD: root
       # .envファイルの「DB_DATABASE」とMYSQL_DATABASEを合わせる
@@ -33,58 +32,24 @@ services:
       - ./docker/db/my.cnf:/etc/mysql/conf.d/my.cnf
       - ./docker/db/sql:/docker-entrypoint-initdb.d
     ports:
-      - 3306:3306
-  
-  db-test:
-    image: mysql:latest
-    container_name: db-test
-    environment:
-      MYSQL_ROOT_PASSWORD: root
-      # .envファイルの「DB_DATABASE」と合わせる
-      MYSQL_DATABASE: test_db
-      TZ: "Asia/Tokyo"
-      # 文字コード指定
-    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
-    volumes:
-      - ./docker/db-test/data:/var/lib/mysql
-      - ./docker/db-test/my.cnf:/etc/mysql/conf.d/my.cnf
-      - ./docker/db-test/sql:/docker-entrypoint-initdb.d
-    ports:
-      - 3307:3306
+      - 3500:3306
 
-  phpmyadmin:
+  phpmyadmin-dl:
     image: phpmyadmin/phpmyadmin
-    container_name: phpmyadmin
+    container_name: phpmyadmin-dl
     environment:
       - PMA_ARBITRARY=1
       - PMA_HOST=db
       - PMA_USER=root
       - PMA_PASSWORD=root
     links:
-      - db
+      - db-dl
     ports:
-    # コンテナのポートが4桁だとなぜか起動しない     
-      - 8080:80
+      - 8580:80
     volumes:
       - /sessions
-  
-  phpmyadmin-test:
-    image: phpmyadmin/phpmyadmin
-    container_name: phpmyadmin-test
-    environment:
-      - PMA_ARBITRARY=1
-      - PMA_HOST=db-test
-      - PMA_USER=root
-      - PMA_PASSWORD=root
-    links:
-      - db-test
-    ports:
-      # コンテナのポートが4桁だと起動しない
-      - 8889:80
-    volumes:
-      - /sessions
-  
-  mailcatcher:
+
+  mailcatcher-dl:
     image: schickling/mailcatcher
     ports:
       - 1080:1080
