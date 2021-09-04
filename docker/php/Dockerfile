@@ -22,9 +22,7 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 # nodeインストール(aptだとNodejsは古いため、パッケージマネージャの n を使用してインストール)
 RUN apt install -y npm \
     && npm install n -g \
-    && n 12
+    && n stable
 
 # RUN , CMD , ENTRYPOINT , COPY , ADD を実行する時のワーキングディレクトリを指定
 WORKDIR /var/www
-
-RUN composer create-project laravel/laravel my-app --prefer-dist
