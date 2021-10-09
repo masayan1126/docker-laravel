@@ -6,6 +6,8 @@ services:
     build: ./docker/php
     volumes:
       - ./:/var/www
+      - ./docker/php/php.ini:/usr/local/etc/php/php.ini
+      - ./log:/var/log
 
   web-dl:
     container_name: nginx-dl
