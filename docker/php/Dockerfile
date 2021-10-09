@@ -14,8 +14,11 @@ RUN apt update \
     # PDO_MYSQL は、PHP から MySQL データベースへのアクセスを可能にするための PHP Data Objects (PDO) インターフェイス を実装したドライバ。
     && docker-php-ext-install zip pdo_mysql \
     # gitのインストール
-    && apt install -y git
-
+    && apt install -y git \
+    # xdebugのインストール
+    && pecl install xdebug \
+    && docker-php-ext-enable xdebug
+    
 # Composerのインストール & パス通す
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
