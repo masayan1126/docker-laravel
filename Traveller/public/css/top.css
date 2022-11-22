@@ -1,0 +1,23 @@
+.top-right{
+    background-color: aqua;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 50px;
+
+
+}
+
+.top-right > a {
+    color: black;
+    font-size: 20px;
+    margin: 30px;
+    
+    text-decoration: none;
+
+}
+
+.top-main {
+    height: 100vh;
+    background-image: url(../css/img/フェイスブックカバー\　アンティーク\　ベージュ\　ターコイズ\　エメラルド\　骨董\　民藝\　雑貨.png);
+}
