@@ -1,0 +1,45 @@
+.create-select-country{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.create-select-country-question{
+    margin-right: 30px;
+}
+
+#create-country{
+    margin-left: 30px;
+}
+
+.create-select-picture{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.create-select-picture-question{
+    margin-left: 430px;
+}
+
+#create-image{
+    margin-right: 385px;
+}
+
+.create-write-caption{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.create-write-caption-question{
+    margin-right: 32px;   
+}
+
+#create-caption{
+    margin-left: 32px;
+}
+
+main{
+    background-color: white;
+}
