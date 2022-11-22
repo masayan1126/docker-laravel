@@ -46,3 +46,7 @@ Route::get('/post', function () {
 Route::get('/show', function () {
     return view('show');
 });
+
+Route::get('/header', function () {
+    return view('layouts/app');
+});
