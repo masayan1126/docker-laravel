@@ -4542,7 +4542,7 @@ input[type=button].btn-block {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 1rem;
+  padding: 0rem 1rem;
 }
 
 .navbar .container,
@@ -7081,7 +7081,7 @@ button.bg-dark:focus {
 }
 
 .bg-white {
-  background-color: #fff !important;
+  background-color: #ced4da;
 }
 
 .bg-transparent {
@@ -10932,3 +10932,25 @@ a.text-dark:focus {
   }
 }
 
+.mypage_button{
+  display: inline-block;
+  padding-top: 0.32rem;
+  padding-bottom: 0.32rem;
+  margin-right: 1rem;
+  font-size: 1.125rem;
+  line-height: inherit;
+  white-space: nowrap;
+  color: black;
+  text-decoration: none;
+}
+
+.mypage_button:hover,
+.mypage_button:focus
+.mypage_button:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.app_title{
+  margin-left: 280px;
+}
