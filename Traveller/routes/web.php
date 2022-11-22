@@ -20,3 +20,29 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+/* view作成用の仮のルーティング */
+
+Route::get('/top', function () {
+    return view('layouts/top');
+});
+
+Route::get('/create', function () {
+    return view('layouts/create');
+});
+
+Route::get('/edit', function () {
+    return view('layouts/edit');
+});
+
+Route::get('/mypage', function () {
+    return view('layouts/mypage');
+});
+
+Route::get('/post', function () {
+    return view('layouts/post');
+});
+
+Route::get('/show', function () {
+    return view('layouts/show');
+});
