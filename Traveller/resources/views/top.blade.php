@@ -6,24 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="{{ asset('css/top.css') }}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
 </head>
 <body>
     @if (Route::has('login'))
-    <div class="top-right">
+    <div class="top-main">
+        <div class="top-right">
         @auth
             <a href="{{ url('/home') }}">Home</a>
         @else
-            <a href="{{ route('login') }}">Login</a>
+            <a href="{{ route('login') }}"><img class="header-login-logo"src="./images/loginicon.png" alt="">Login</a>
+            
 
             @if (Route::has('register'))
-                <a href="{{ route('register') }}">Register</a>
+                <a href="{{ route('register') }}"><img class="header-register-logo"src="./images/registericon.png" alt="">Register</a>
             @endif
         @endauth
+        </div>
+        <p class="top-title">Traveller</p>
     </div>
-    <div class="top-main">
-        <div>Traveler</div>
-    </div>
+    
 @endif
     
 </body>
