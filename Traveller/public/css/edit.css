@@ -1,0 +1,75 @@
+main{
+    display: flex;
+    justify-content: center;
+    font-family: itim;
+}
+
+
+
+.edit-allpage{
+    margin-top: 10px;
+    border: 1px solid black; 
+    width: 130%;
+
+}
+
+
+/*1*/
+.icon-name-box{
+    border-bottom: 1px solid black;
+}
+.icon-user-name{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: left;
+    padding-left: 0em;
+    padding-bottom: 0px;
+}
+
+
+/*2*/
+.country-box{
+    border-bottom: 1px solid black;
+}
+.select-country{
+    display: flex;
+    justify-content: center;
+}
+
+/*3*/
+.file-box{
+    border-bottom: 1px solid black;
+}
+.change-pictures{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+}
+.select-pictures{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    padding-bottom: 200px;
+}
+
+
+/*4*/
+.edit-caption{
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+}
+.write-caption{
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+
+/*5*/
+.edit-button{
+    position:fixed;
+    right:240px;
+    bottom:50px;
+}
