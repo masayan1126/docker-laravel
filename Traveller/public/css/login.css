@@ -1,17 +1,19 @@
-.row justify-content-cent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
 .login-email {
     font-size: 20px;
     font-family: 'Itim', cursive;
-
+    margin: 50px;
+    
 }
 
 .login-password {
     font-size: 20px;
     font-family: 'Itim', cursive;
+    margin: 50px;
 }
+
+.form-control {
+    margin: 50px;
+}
+
