@@ -20,7 +20,7 @@
     
     <!-- Styles -->
     <link href="{{ asset('css/app-header-auth.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/register.css">
 
 </head>
 <body>
