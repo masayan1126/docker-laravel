@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app-header-auth.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="../css/login.css">
 
 </head>
