@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: none;
+
+    text-decoration: none;
+    color: black;
+
+    font-family: 'Itim', cursive;
+}
+
+*:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.mypage-show-name-section{
+    background-color: aqua;
+    height: 60px;
+    font-size: 32px;
+}
+.mypage-show-name-list{
+    display: flex;
+    right: 20%;
+    margin-left: 5%;
+}
+.mypage-show-name-list > li{
+    align-items: center;
+    list-style: none;
+    display: flex
+}
+.mypage-smile-icon{
+    width:55px;
+    height:55px;
+    margin: 3px;
+}
+
+.mypage-map-section{
+    background-color:blueviolet;
+    min-height: 400px;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mypage-map-display-area{
+    background-color: brown;
+    border:solid 1px black;
+    min-width: 900px;
+    
+    background-image:url('../images/map.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    height: 95%;
+}
+
+.mypage-contents-section{
+    background-color: aquamarine;
+    min-height: 400px;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+}
+.mypage-contents-container{
+    background-color: brown;
+    min-width: 900px;
+    display: grid;
+    align-items: center;
+
+    height: 100%;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.mypage-content-card{
+    background-color:darkorange;
+
+    border: 2px solid black;
+    border-style: outline-offset;
+
+    width: 280px;
+    height: 330px;
+
+    display: flex;
+    flex-direction: column;
+}
+.mypage-country-name-label{
+    background-color: bisque;
+    border-bottom: solid 2px black;
+    /* width: 280px; */
+    width: 100%;
+    height: 40px;
+    
+    margin-bottom: 10px;
+    
+    
+    text-align: center;
+    vertical-align: middle;
+    font-size: 24px;
+}
+
+
+
+.mypage-posted-image-box{
+    background-color: blue;
+    width: 276px;
+    height: 276px;
+    align-items: center;
+}
+.mypage-posted-image{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
