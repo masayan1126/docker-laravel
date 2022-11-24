@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -15,9 +16,12 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app-header-auth.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="../css/login.css">
+
 </head>
 <body>
     <div id="app">
@@ -27,28 +31,28 @@
                 MyPage
                 </a>
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    CheckingPosts
+                    CheckingPosts --}}
                     {{-- {{ config('app.name', 'Laravel') }} --}}
-                {{-- </a> --}} 
-                <h1 class="app_title">Traveller</h1>
+                {{-- </a> --}}
+                <h1 class="app-title">Traveller</h1>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                {{-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> --}}
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
 
                     </ul>
 
                     <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
+                    {{-- <ul class="navbar-nav ml-auto"> --}}
                         <!-- Authentication Links -->
                         @guest
                             {{-- <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            </li>
-                            @if (Route::has('register'))
+                            </li> --}}
+                            {{-- @if (Route::has('register'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
@@ -72,7 +76,7 @@
                                 </div>
                             </li>
                         @endguest
-                    </ul>
+                    {{-- </ul> --}}
                 </div>
             </div>
         </nav>
