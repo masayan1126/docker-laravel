@@ -54,8 +54,8 @@
     outline: none;
     position: absolute;
 	/* top: 80px; */
-	right: 25px;
     display: flex;
+    justify-content: end;
 }
 
 img.register-logo {
