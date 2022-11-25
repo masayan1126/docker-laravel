@@ -2,16 +2,16 @@
 @section('content')
 
 <section class="mypage-show-name-section">
-
+    <div class="mypage-name-label-container">
         <ul class="mypage-show-name-list">
             <li>
-                <img class="mypage-smile-icon" src="{{ asset('images/smile.svg') }}"  walt="simle icon">
+                <img class="mypage-smile-icon" src="{{ asset('images/smile.svg') }}"  alt="simle icon">
             </li>
             <li>
                 User Name
             </li>
         </ul>
-
+    </div>
 </section>
 <section class="mypage-map-section">
     <div class="mypage-map-display-area">

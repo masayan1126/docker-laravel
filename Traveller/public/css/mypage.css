@@ -16,14 +16,26 @@
 }
 
 .mypage-show-name-section{
-    background-color: aqua;
+    /* background-color: aqua; */
+
+    display: flex;
+    justify-content: center;
+
     height: 60px;
-    font-size: 32px;
+
 }
+
+.mypage-name-label-container{
+    /* background-color: brown; */
+    width: 900px;
+    align-items: center;
+}
+
 .mypage-show-name-list{
     display: flex;
     right: 20%;
-    margin-left: 5%;
+
+    font-size: 32px;
 }
 .mypage-show-name-list > li{
     align-items: center;
@@ -37,7 +49,7 @@
 }
 
 .mypage-map-section{
-    background-color:blueviolet;
+    /* background-color:blueviolet; */
     min-height: 400px;
     height: 40vh;
     display: flex;
@@ -46,9 +58,9 @@
 }
 
 .mypage-map-display-area{
-    background-color: brown;
+    /* background-color: brown; */
     border:solid 1px black;
-    min-width: 900px;
+    width: 900px;
     
     background-image:url('../images/map.png');
     background-repeat: no-repeat;
@@ -58,15 +70,16 @@
 }
 
 .mypage-contents-section{
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     min-height: 400px;
     height: 40vh;
+    margin-bottom: 40px;
     display: flex;
     justify-content: center;
 }
 .mypage-contents-container{
-    background-color: brown;
-    min-width: 900px;
+    /* background-color: brown; */
+    width: 900px;
     display: grid;
     align-items: center;
 
@@ -76,26 +89,24 @@
 }
 
 .mypage-content-card{
-    background-color:darkorange;
+    /* background-color:darkorange; */
 
     border: 2px solid black;
     border-style: outline-offset;
 
     width: 280px;
-    height: 330px;
+    height: 320px;
 
     display: flex;
     flex-direction: column;
 }
 .mypage-country-name-label{
-    background-color: bisque;
+    /* background-color: bisque; */
     border-bottom: solid 2px black;
-    /* width: 280px; */
     width: 100%;
     height: 40px;
     
-    margin-bottom: 10px;
-    
+    /* margin-bottom: 10px; */
     
     text-align: center;
     vertical-align: middle;
@@ -105,7 +116,7 @@
 
 
 .mypage-posted-image-box{
-    background-color: blue;
+    /* background-color: blue; */
     width: 276px;
     height: 276px;
     align-items: center;
@@ -114,4 +125,53 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+@media (max-width: 992px) {
+    .mypage-contents-section{
+        /* background-color: brown; */
+        height: auto;
+    }
+    .mypage-name-label-container{
+        /* background-color: darkslategrey; */
+        width: 590px;
+    }
+    .mypage-map-display-area{
+        /* background-color: chartreuse; */
+        border:solid 1px black;
+        width: 590px;
+
+        background-repeat: no-repeat;
+
+    }
+    .mypage-contents-container{
+        /* background-color: antiquewhite; */
+        display: flex;
+        flex-direction: column;
+      width: 590px;
+      height: auto;
+    }
+}
+
+@media (max-width: 560px) {
+    .mypage-name-label-container{
+        /* background-color: azure; */
+        width: 480px;
+    }
+    .mypage-map-display-area{
+        /* background-color: darkgrey; */
+        border:solid 1px black;
+        width: 480px;
+
+        background-repeat: no-repeat;
+
+    }
+    .mypage-contents-container{
+        /* background-color: fuchsia; */
+        display: flex;
+        flex-direction: column;
+      width: 480px;
+      height: auto;
+
+    }
 }

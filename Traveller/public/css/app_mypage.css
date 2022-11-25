@@ -10952,56 +10952,13 @@ a.text-dark:focus {
 }
 
 .app_title{
-  margin-left: 280px;
+  font-size: 2.25rem; 
+  /* margin-left: 50%; */
 }
-.mypage-navbar-check-posts{
-  background-color: aqua;
-
-  display: inline-block;
-  position: absolute;
-  left: 5%;
-
-  padding-top: 0.32rem;
-  padding-bottom: 0.32rem;
-  margin-right: 1rem;
-  font-size: 1.125rem;
-  line-height: inherit;
-  white-space: nowrap;
-  color: black;
-  text-decoration: none;
-
-  color: black;
+.container{
+  flex-wrap: none;
 }
 
-.mypage-navbar-check-posts:hover,
-.mypage-navbar-check-posts:focus
-.mypage-navbar-check-posts:visited {
-  text-decoration: none;
-  color: inherit;
+.app-mypage-cheching-img{
+  width: 40px;
 }
-
-
-.mypage-navbar-brand{
-  background-color: #c51f1a;
-  
-  display: inline-block;
-  padding-top: 0.32rem;
-  padding-bottom: 0.32rem;
-  /* margin-right: 1rem; */
-
-  position: absolute;
-  left: 50%;
-  
-  font-size: 1.125rem;
-
-  line-height: inherit;
-  white-space: nowrap;
-}
-.mypage-navbar-brand:hover,
-.mypage-navbar-brand:focus {
-  text-decoration: none;
-}
-
-
-
-

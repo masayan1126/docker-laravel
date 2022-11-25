@@ -15,22 +15,19 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <!-- Styles -->
     <link href="{{ asset('css/app_mypage.css') }}" rel="stylesheet">
     <link href="{{ asset('css/mypage.css') }}" rel="stylesheet">
-    
 
 </head>
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    <img class="mypage-cheching-posts-icon" src="{{ asset('images/checking_posts.svg') }}"  walt="Checking Posts">
-                    Checking Posts
-                    {{-- {{ config('app.name', 'Laravel') }} --}}
+                <a class="mypage_button" href="{{ ('/') }}">
+                    <img class="app-mypage-cheching-img" src="{{ asset('images/checking_posts.svg') }}" alt="">
+                    CheckingPosts
                 </a>
                 <h1 class="app_title">Traveller</h1>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
