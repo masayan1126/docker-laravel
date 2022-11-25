@@ -11,8 +11,8 @@
         {{-- １．アイコンとユーザーネーム --}}
         <section class="icon-name-box">
             <div class="icon-user-name">
-                <form action="" method="POST">😊</form>
-                <p class="edit-user-name">User Name</p>
+                <form action="" method="POST">アイコン😊（仮）</form>
+                <p class="edit-user-name">User Name（仮）</p>
             </div>
         </section>
 
@@ -32,11 +32,14 @@
         {{-- ３．写真の編集 --}}
         <section class="file-box">
             <div class="change-pictures">
-                <p class="edit-select-picture-question">Delete or plus files</p>
+                <p class="edit-select-picture-question">Change files</p>
             </div>
             <div class="select-pictures">
                 {{-- ファイルを消す＋追加する（最低１枚・上限５枚） --}}
-                <input type="file" name="edit-image" multiple='multiple' id="edit-image">
+                <label class="file">
+                    <input type="file" name="edit-image" multiple='multiple' id="edit-image" style="display:none">
+                    Select files
+                </label>
             </div>
         </section>
 
@@ -52,8 +55,8 @@
         
         {{-- 5.編集ボタン --}}
         <div class="edit-button">
-            <img src="https://icooon-mono.com/00005-%e5%ae%9a%e7%95%aa%e3%83%9a%e3%83%b3%e3%81%ae%e3%83%95%e3%83%aa%e3%83%bc%e3%82%a2%e3%82%a4%e3%82%b3%e3%83%b3%e7%b4%a0%e6%9d%90/" alt="">
-            <button>Edit</button>
+            <img class="edit-icon" src="images/edit-icon.png" alt="">
+            <button class="edit">Edit</button>
         </div>
         </form>
     </div>
