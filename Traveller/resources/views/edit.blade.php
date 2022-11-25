@@ -32,7 +32,7 @@
         {{-- ３．写真の編集 --}}
         <section class="file-box">
             <div class="change-pictures">
-                <p class="edit-select-picture-question">Change files</p>
+                <p class="edit-select-picture-question">change your files</p>
             </div>
             <div class="select-pictures">
                 {{-- ファイルを消す＋追加する（最低１枚・上限５枚） --}}
