@@ -5,6 +5,22 @@
     
 }
 
+.create-select-picture {
+    display: flex;
+}
+
+.create-select-picture-question {
+    font-size: 25px;
+    font-family: 'Itim', cursive;
+    margin-left: 30px;
+}
+
+.create-image {
+    font-size: 20px;
+    font-family: 'Itim', cursive;
+    margin-left: 250px;
+}
+
 
 .register-email {
     font-size: 25px;
@@ -37,7 +53,7 @@
     background: transparent;
     outline: none;
     position: absolute;
-	top: 100px;
+	/* top: 80px; */
 	right: 25px;
     display: flex;
 }
@@ -49,10 +65,11 @@ img.register-logo {
 #name.form-control {
     border-radius: 0;
     border: 1px solid; 
+    margin-left: 160px;
 }
 
 #password.form-control {
-    margin-left: 120px;
+    margin-left: 125px;
     border-radius: 0;
     border: 1px solid; 
     
@@ -70,6 +87,7 @@ img.register-logo {
 #password-confirm.form-control {
     border-radius: 0;
     border: 1px solid; 
+    margin-left: 25px;
     
 }
 

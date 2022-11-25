@@ -26,6 +26,13 @@
                             </div>
                         </div>
 
+                        <div class="create-select-picture">
+                            <div class="create-select-picture-question">
+                                Picture
+                            </div>
+                            <input type="file" name="create-image" multiple='multiple' class="create-image">
+                        </div>
+
                         <div class="form-group row">
                             {{-- <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label> --}}
                             <label for="email" class="register-email">{{ __('E-Mail Address') }}</label>
