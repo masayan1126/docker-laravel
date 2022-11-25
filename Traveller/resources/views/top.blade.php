@@ -26,7 +26,10 @@
             @endif
         @endauth
         </div>
-        <p class="top-title">Traveller</p>
+        <div class="top-title">
+            <p class="top-title-text">Traveller</p>
+        </div>
+        
     </div>
     
 @endif

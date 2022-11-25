@@ -47,10 +47,18 @@
 
 .top-title {
     color: white;
-    font-size: 50px;
     font-weight: bold;
     text-align: center;
-    line-height: 550px;
+    line-height: 450px;
+    height: 450px;
     font-family: 'Itim', cursive;
+    
 }
 
+.top-title-text {
+    /* position: absolute;
+    top: 150px;
+    left: 620px; */
+    font-size: 60px;
+    
+}
