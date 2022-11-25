@@ -1,3 +1,6 @@
 log/
 docker/db
 .env
+Traveller/node_modules
+Traveller/vendor
+vendor/
