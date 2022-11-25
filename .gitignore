@@ -1,6 +1,19 @@
 log/
 docker/db
 .env
+# Traveller/node_modules
+# Traveller/vendor
+vendor/
+
 Traveller/node_modules
 Traveller/vendor
-vendor/
+Traveller/public/hot
+Traveller/public/storage
+Traveller/storage/*.key
+Traveller/.env
+Traveller/.env.backup
+Traveller/.phpunit.result.cache
+Traveller/Homestead.json
+Traveller/Homestead.yaml
+Traveller/npm-debug.log
+Traveller/yarn-error.log
