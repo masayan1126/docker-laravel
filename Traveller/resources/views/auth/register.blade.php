@@ -30,7 +30,11 @@
                             <div class="create-select-picture-question">
                                 Picture
                             </div>
+                            <label>
                             <input type="file" name="create-image" multiple='multiple' class="create-image">
+                            
+                            </label>
+
                         </div>
 
                         <div class="form-group row">
