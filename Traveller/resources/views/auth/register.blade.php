@@ -31,8 +31,8 @@
                                 Picture
                             </div>
                             <label class="select-icon">
-                            <input type="file" name="create-image" multiple='multiple' class="create-image" style="display:none">
-                            Select files
+                            <input type="file" name="create-image" multiple='multiple' class="create-image">
+                        
                             </label>
 
                         </div>

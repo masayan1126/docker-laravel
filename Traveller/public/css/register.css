@@ -51,6 +51,9 @@
     margin: 50px;
 }
 
+
+    
+
 .btn.btn-primary {
     color: black;
     font-size: 20px;
@@ -58,10 +61,12 @@
     border: none;
     background: transparent;
     outline: none;
-    position: absolute;
-	/* top: 80px; */
-    display: flex;
-    justify-content: end;
+    
+    /* position: absolute;
+    right: 0; */
+    /* display: block;
+    margin: 0 0 0 auto; */
+    
 }
 
 img.register-logo {
