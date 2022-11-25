@@ -30,9 +30,9 @@
                             <div class="create-select-picture-question">
                                 Picture
                             </div>
-                            <label>
-                            <input type="file" name="create-image" multiple='multiple' class="create-image">
-                            
+                            <label class="select-icon">
+                            <input type="file" name="create-image" multiple='multiple' class="create-image" style="display:none">
+                            Select files
                             </label>
 
                         </div>
