@@ -16,7 +16,7 @@
                             <label for="name" class="register-name">{{ __('Name') }}</label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-name-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
 
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">
@@ -67,7 +67,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary" <img class="login-logo"src="./css/registericon.png" alt="">
+                                <button type="submit" class="btn btn-primary"> <img class="register-logo"src="./css/registericon.png" alt="">
                                     {{ __('Register') }}
                                 </button>
                             </div>

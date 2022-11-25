@@ -5,6 +5,7 @@
     
 }
 
+
 .register-email {
     font-size: 25px;
     font-family: 'Itim', cursive;
@@ -36,19 +37,18 @@
     background: transparent;
     outline: none;
     position: absolute;
-	top: 400px;
+	top: 100px;
 	right: 25px;
     display: flex;
 }
 
-.login-logo {
+img.register-logo {
     height: 30px;
 }
 
-#name.form-name-control {
+#name.form-control {
     border-radius: 0;
     border: 1px solid; 
-    
 }
 
 #password.form-control {

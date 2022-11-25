@@ -10951,12 +10951,12 @@ a.text-dark:focus {
   color: inherit;
 }
 
-.app_title{
-  margin-left: 280px;
-}
+
 
 
 
 .app-title {
     font-family: 'Itim', cursive;
+    margin-left: 280px;
+
 }
