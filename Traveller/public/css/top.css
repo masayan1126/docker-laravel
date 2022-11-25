@@ -1,9 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
 .top-main {
     height: 100vh;
     width: 100%;
     background-image: url(../images/top-maincover.png);
     background-size: cover;
-    margin: 0;
+   
 }
 
 
