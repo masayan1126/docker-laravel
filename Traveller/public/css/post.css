@@ -1,0 +1,35 @@
+.post-box{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 30px 500px;
+    padding: 10px 0px;
+}
+
+.post-username-box{
+    display: flex;
+    text-align: left;
+}
+
+.post-readmore-text{
+    overflow: hidden;
+    height: 50px;
+}
+
+.post-readmore{
+    display: none;
+}
+
+.post-readmore:checked + .post-readmore-btn{
+    display: none;
+}
+
+.post-readmore:checked ~ .post-readmore-text{
+    height: auto;
+}
+
+label{
+    position: relative;
+    top: 70px;
+}
