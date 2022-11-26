@@ -31,8 +31,8 @@
                                 Picture
                             </div>
                             <label class="select-icon">
-                            <input type="file" name="create-image" multiple='multiple' class="create-image">
-                        
+                            <input type="file" name="create-image" multiple='multiple' class="create-image" style="display:none">
+                            Select a File
                             </label>
 
                         </div>
@@ -77,7 +77,7 @@
                         </div>
 
                         <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
+                            <div class="register-btn">
                                 <button type="submit" class="btn btn-primary"> <img class="register-logo"src="./css/registericon.png" alt="">
                                     {{ __('Register') }}
                                 </button>

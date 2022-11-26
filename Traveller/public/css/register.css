@@ -15,11 +15,14 @@
     margin-left: 30px;
 }
 
-.create-image {
-    font-size: 20px;
+.select-icon {
+    font-size: 10px;
     font-family: 'Itim', cursive;
-    margin-left: 250px;
+    margin-left: 212px;
+    border: 1px solid;
+    padding: 0 10px 0 10px;
 }
+
 
 .select-icon {
     font-size: 25px;
@@ -52,7 +55,13 @@
 }
 
 
+.form-group row mb-0 {
+
+    display: grid;
+    justify-content: right;
     
+}
+
 
 .btn.btn-primary {
     color: black;
@@ -61,11 +70,11 @@
     border: none;
     background: transparent;
     outline: none;
+    text-align: end;
     
     /* position: absolute;
     right: 0; */
-    /* display: block;
-    margin: 0 0 0 auto; */
+   
     
 }
 
