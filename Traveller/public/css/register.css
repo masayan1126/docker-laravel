@@ -55,12 +55,12 @@
 }
 
 
-.form-group row mb-0 {
+/* .form-group row mb-0 {
 
     display: grid;
     justify-content: right;
     
-}
+} */
 
 
 .btn.btn-primary {
@@ -70,7 +70,10 @@
     border: none;
     background: transparent;
     outline: none;
-    text-align: end;
+    position: absolute;
+	top: 570px;
+	left: 760px;
+    display: flex;
     
     /* position: absolute;
     right: 0; */
