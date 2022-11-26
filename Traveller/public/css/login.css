@@ -34,7 +34,7 @@
     height: 30px;
 }
 
-#password.form-control {
+#login-password.form-control {
     margin-left: 120px;
     border-radius: 0;
     border: 1px solid; 
@@ -42,7 +42,7 @@
 }
 
 
-#email.form-control {
+#login-email.form-control {
     border-radius: 0;
     border: 1px solid; 
     
