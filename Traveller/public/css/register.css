@@ -55,12 +55,6 @@
 }
 
 
-/* .form-group row mb-0 {
-
-    display: grid;
-    justify-content: right;
-    
-} */
 
 
 .btn.btn-primary {
@@ -73,25 +67,20 @@
     position: absolute;
 	top: 570px;
 	left: 760px;
-    display: flex;
-    
-    /* position: absolute;
-    right: 0; */
-   
-    
+    display: flex; 
 }
 
 img.register-logo {
     height: 30px;
 }
 
-#name.form-control {
+#register-name.form-control {
     border-radius: 0;
     border: 1px solid; 
     margin-left: 160px;
 }
 
-#password.form-control {
+#register-password.form-control {
     margin-left: 125px;
     border-radius: 0;
     border: 1px solid; 
@@ -99,7 +88,7 @@ img.register-logo {
 }
 
 
-#email.form-control {
+#register-email.form-control {
     border-radius: 0;
     border: 1px solid; 
     
@@ -107,7 +96,7 @@ img.register-logo {
 
 
 
-#password-confirm.form-control {
+#register-password-confirm.form-control {
     border-radius: 0;
     border: 1px solid; 
     margin-left: 25px;
