@@ -1,0 +1,86 @@
+main{
+    display: flex;
+    justify-content: center;
+    font-family: 'Itim', cursive;
+    font-size: larger;
+}
+.show-allpage{
+    margin-top: 10px;
+    border: 2px solid black; 
+    width: 30vw;
+}
+
+/*1*/
+.showpage-userName{
+    border-bottom: 1px solid black;
+    /* background-color: aqua; */
+
+}
+.showpage-show-name-list{
+    list-style: none;
+    display: flex;
+    justify-content: left; 
+    /* text-align:left; */
+    padding: 0;
+    margin-bottom: 0;
+}
+.mypage-smile-icon{
+    width: 6vw;
+    height: 6vh;
+}
+
+/*2*/
+.showpage-country{
+    border-bottom: 1px solid black;
+    /* background-color: brown; */
+}
+.country-content{
+    display: flex;
+    justify-content: center;
+}
+
+.show-country{
+    margin-top: 15px;
+    margin-bottom: 0px;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+.showpage-country-name{
+    text-align: center;
+    color: black;
+    border-bottom: 1px solid black;
+
+}
+.showpage-posted-files{
+    width: 100%;
+}
+
+/*3*/
+.showpage-show-name-list-comment{
+    list-style: none;
+    display: flex;
+    justify-content: left; 
+    padding: 0;
+    margin-bottom: 0;
+}
+.mypage-smile-icon-comment{
+    width: 3vw;
+    height: 3vh;
+}
+.comment-user-name{
+    font-size: smaller;
+}
+.comment{
+    font-size: smaller;
+}
+
+
+
+
+
+
+
+
+
+
