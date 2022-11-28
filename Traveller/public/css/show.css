@@ -79,7 +79,39 @@ main{
     font-size: smaller;
 }
 
+/*5*/
+.edit-button{
+    position:fixed;
+    right:240px;
+    bottom:50px;
+}
+.edit-icon{
+    width: 27px;
+    height: 27px;
+}
+.edit{
+    outline: none;
+    border: none;
+    font-size: larger;
+    background-color: transparent;
+}
 
+/*6*/
+.delete-button{
+    position:fixed;
+    right:210px;
+    bottom:10px;
+}
+.delete-icon{
+    width: 27px;
+    height: 27px;
+}
+.delete{
+    outline: none;
+    border: none;
+    font-size: larger;
+    background-color: transparent;
+}
 
 
 

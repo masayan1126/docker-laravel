@@ -63,6 +63,18 @@
             </div>
         </section>
 
+        {{-- 5.編集ボタン --}}
+        <div class="edit-button">
+            <img class="edit-icon" src="images/edit-icon.png" alt="">
+            <button class="edit">Edit</button>
+        </div>
+
+        {{-- 6.削除ボタン --}}
+        <div class="delete-button">
+            <img class="delete-icon" src="images/delete-icon.png" alt="">
+            <button class="delete">Delete</button>
+        </div>
+
         </form>
     </div>
 </main>
