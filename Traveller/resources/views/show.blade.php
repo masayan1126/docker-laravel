@@ -44,32 +44,32 @@
             </div> 
         </section>
 
-        {{-- 4．コメントの表示 --}}
+        {{-- 4.Likes --}}
+        <div class="Likes-button">
+            <img class="Likes-icon" src="images/Likes-icon.png" alt="">
+            <p class="Likes">20likes</p>
+        </div>
+
+        {{-- 5．コメントの表示 --}}
         <section class="showpage-comment">
             <div class="comment-content">
-                <div>
-                    <ul class="showpage-show-name-list-comment">
-                        <li>
-                            <img class="mypage-smile-icon-comment" src="{{ asset('images/smile.svg') }}"  alt="simle icon"> {{-- アイコン --}}
-                        </li>
-                        <li class="comment-user-name">
-                            User Name 
-                        </li>
-                    </ul>
-                    <a href="#">
-                        <p class="comment">コメント1</p>
-                    </a>
-                </div> 
+                <div class="comment-icon-userName">
+                    <img class="mypage-smile-icon-comment" src="{{ asset('images/smile.svg') }}"  alt="simle icon"> {{-- アイコン --}}
+                    <p class="comment-user-name">User Name</p>
+                </div>
+                <a href="#">
+                    <p class="comment">コメント1</p>
+                </a>
             </div>
         </section>
 
-        {{-- 5.編集ボタン --}}
+        {{-- 6.編集ボタン --}}
         <div class="edit-button">
             <img class="edit-icon" src="images/edit-icon.png" alt="">
             <button class="edit">Edit</button>
         </div>
 
-        {{-- 6.削除ボタン --}}
+        {{-- 7.削除ボタン --}}
         <div class="delete-button">
             <img class="delete-icon" src="images/delete-icon.png" alt="">
             <button class="delete">Delete</button>

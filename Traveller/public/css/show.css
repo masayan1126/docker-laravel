@@ -57,20 +57,35 @@ main{
 }
 
 /*3*/
-.showpage-caption{
+/* .showpage-caption{
     border-bottom: 1px solid black;
-}
+} */
+
 /*4*/
-.showpage-show-name-list-comment{
-    list-style: none;
+.Likes-button{
     display: flex;
     justify-content: left; 
-    padding: 0;
-    margin-bottom: 0;
+    
+}
+.Likes-icon{
+    width: 27px;
+    height: 27px;
+}
+.Likes{
+    outline: none;
+    border: none;
+    font-size: smaller;
+    background-color: transparent;
+}
+
+/*5*/
+.comment-icon-userName{
+    display: flex;
+    justify-content: left;
 }
 .mypage-smile-icon-comment{
-    width: 3vw;
-    height: 3vh;
+    width: 27px;
+    height: 27px;
 }
 .comment-user-name{
     font-size: smaller;
@@ -79,7 +94,7 @@ main{
     font-size: smaller;
 }
 
-/*5*/
+/*6*/
 .edit-button{
     position:fixed;
     right:240px;
@@ -96,7 +111,7 @@ main{
     background-color: transparent;
 }
 
-/*6*/
+/*7*/
 .delete-button{
     position:fixed;
     right:210px;
