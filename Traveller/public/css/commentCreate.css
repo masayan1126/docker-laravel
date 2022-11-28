@@ -1,0 +1,37 @@
+main{
+    font-size: larger;
+}
+
+/* .edit-allpage{
+    background-color: #C0A089;
+} */
+
+/*コメントトピック*/
+.comment-topic{
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+/*コメントテキスト*/
+.comment-create-text{
+
+}
+
+/*コメントボタン*/
+.comment-button{
+    position:fixed;
+    right:240px;
+    bottom:50px;
+}
+
+.comment-icon{
+    width: 27px;
+    height: 27px;
+}
+
+.comment{
+    outline: none;
+    border: none;
+    font-size: larger;
+    background-color: transparent;
+}
