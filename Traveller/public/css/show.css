@@ -57,6 +57,10 @@ main{
 }
 
 /*3*/
+.showpage-caption{
+    border-bottom: 1px solid black;
+}
+/*4*/
 .showpage-show-name-list-comment{
     list-style: none;
     display: flex;

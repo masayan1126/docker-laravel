@@ -34,8 +34,17 @@
                     </a>
                 </div>
             </section>
+        
+        {{-- 3.キャプションの表示 --}}
+        <section class="showpage-caption">
+            <div class="caption-content">
+                <a href="#">
+                    <p class="caption">キャプション</p>
+                </a>
+            </div> 
+        </section>
 
-        {{-- 3．コメントの表示 --}}
+        {{-- 4．コメントの表示 --}}
         <section class="showpage-comment">
             <div class="comment-content">
                 <div>
@@ -50,18 +59,6 @@
                     <a href="#">
                         <p class="comment">コメント1</p>
                     </a>
-                    {{-- <ul class="showpage-show-name-list">
-                        <li>
-                            <img class="mypage-smile-icon-comment" src="{{ asset('images/smile.svg') }}"  alt="simle icon"> {{-- アイコン --}}
-                        {{-- </li>
-                        <li class="comment-user-name">
-                            User Name 
-                        </li>
-                        <li><a href="#"><div class="showpage-comment-box"><p class="comment">コメント2</p></div></a></li>
-                    </ul>
-                    <ul class="showpage-show-name-list">
-                        <li> --}}
-                            {{-- <img class="mypage-smile-icon-comment" src="{{ asset('images/smile.svg') }}"  alt="simle icon"> {{-- アイコン --}}
                 </div> 
             </div>
         </section>
