@@ -20,6 +20,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/edit.css') }}" rel="stylesheet" >
     <link href="{{ asset('css/show.css') }}" rel="stylesheet" >
+    <link href="{{ asset('css/commentCreate.css') }}" rel="stylesheet" >
 
 </head>
 <body>

@@ -50,3 +50,7 @@ Route::get('/show', function () {
 Route::get('/header', function () {
     return view('layouts/app');
 });
+
+Route::get('/commentCreate', function () {
+    return view('commentCreate');
+});
