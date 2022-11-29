@@ -10953,12 +10953,10 @@ a.text-dark:focus {
 
 
 
-.app-title{
+
+
+.app-title {
     font-family: 'Itim', cursive;
     margin-left: 450px;
-}
 
-/* .navbar navbar-expand-md navbar-light bg-white shadow-sm {
-    display: flex;
-    justify-self: center;
-} */
+}
