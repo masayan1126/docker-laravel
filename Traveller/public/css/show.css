@@ -1,0 +1,137 @@
+main{
+    display: flex;
+    justify-content: center;
+    font-family: 'Itim', cursive;
+    font-size: larger;
+}
+.show-allpage{
+    margin-top: 10px;
+    border: 2px solid black; 
+    width: 30vw;
+}
+
+/*1*/
+.showpage-userName{
+    border-bottom: 1px solid black;
+    /* background-color: aqua; */
+
+}
+.showpage-show-name-list{
+    list-style: none;
+    display: flex;
+    justify-content: left; 
+    /* text-align:left; */
+    padding: 0;
+    margin-bottom: 0;
+}
+.mypage-smile-icon{
+    width: 6vw;
+    height: 6vh;
+}
+
+/*2*/
+.showpage-country{
+    border-bottom: 1px solid black;
+    /* background-color: brown; */
+}
+.country-content{
+    display: flex;
+    justify-content: center;
+}
+
+.show-country{
+    margin-top: 15px;
+    margin-bottom: 0px;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+.showpage-country-name{
+    text-align: center;
+    color: black;
+    border-bottom: 1px solid black;
+
+}
+.showpage-posted-files{
+    width: 100%;
+}
+
+/*3*/
+/* .showpage-caption{
+    border-bottom: 1px solid black;
+} */
+
+/*4*/
+.Likes-button{
+    display: flex;
+    justify-content: left; 
+    
+}
+.Likes-icon{
+    width: 27px;
+    height: 27px;
+}
+.Likes{
+    outline: none;
+    border: none;
+    font-size: smaller;
+    background-color: transparent;
+}
+
+/*5*/
+.comment-icon-userName{
+    display: flex;
+    justify-content: left;
+}
+.mypage-smile-icon-comment{
+    width: 27px;
+    height: 27px;
+}
+.comment-user-name{
+    font-size: smaller;
+}
+.comment{
+    font-size: smaller;
+}
+
+/*6*/
+.edit-button{
+    position:fixed;
+    right:240px;
+    bottom:50px;
+}
+.edit-icon{
+    width: 27px;
+    height: 27px;
+}
+.edit{
+    outline: none;
+    border: none;
+    font-size: larger;
+    background-color: transparent;
+}
+
+/*7*/
+.delete-button{
+    position:fixed;
+    right:210px;
+    bottom:10px;
+}
+.delete-icon{
+    width: 27px;
+    height: 27px;
+}
+.delete{
+    outline: none;
+    border: none;
+    font-size: larger;
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
