@@ -14,7 +14,5 @@ class Like extends Model
         return $this->belongsTo('App\Post');
     }
 
-    public function comments() {
-        return $this->hasMany('App\Comment');
-    }
+    
 }
