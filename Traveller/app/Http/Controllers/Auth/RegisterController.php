@@ -8,6 +8,7 @@ use App\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Str;
 
 class RegisterController extends Controller
 {
@@ -64,9 +65,17 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        // dd($data);
+        // 受け取った
+        $filename = Str::random(30) . '.' . request()->file('image_at')->getClientOriginalExtension();
+        // dd($filename);
+
+        request()->file('image_at')->storeAs('public/images/user_icon', $filename);
+
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
+            'image_at' => $filename,
             'password' => Hash::make($data['password']),
         ]);
     }
