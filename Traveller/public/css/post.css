@@ -33,3 +33,35 @@ label{
     position: relative;
     top: 70px;
 }
+
+#post-Likes-button{
+    display: flex;
+    justify-content: left; 
+}
+
+.Likes-icon{
+    width: 27px;
+    height: 27px;
+}
+.Likes{
+    outline: none;
+    border: none;
+    font-size: smaller;
+    background-color: transparent;
+}
+
+/*5*/
+.comment-icon-userName{
+    display: flex;
+    justify-content: left;
+}
+.mypage-smile-icon-comment{
+    width: 27px;
+    height: 27px;
+}
+.comment-user-name{
+    font-size: smaller;
+}
+.comment{
+    font-size: smaller;
+}
