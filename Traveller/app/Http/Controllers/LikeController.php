@@ -15,7 +15,7 @@ class LikeController extends Controller
         $like->user_id = Auth::user()->id;
         $like->save();
 
-        return redirect('/show');
+        return back();
     }
 
     public function destroy(Request $request)
