@@ -9,6 +9,7 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\File;
 
 class RegisterController extends Controller
 {
@@ -54,6 +55,7 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            // 'image_at' => ['file','max:6144','mimes:jpeg,jpg,png,gif,webp']
         ]);
     }
 
@@ -65,18 +67,36 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        // このcontrollerは通常vendor側で処理をされるので、Requestは使えない
+        // Requestを処理する場合はすべて実装する必要が合える。
+        // vendorファイルの場所--> vendor\laravel\ui\auth-backend\RegistersUsers.php
+
         // dd($data);
-        // 受け取った
-        $filename = Str::random(30) . '.' . request()->file('image_at')->getClientOriginalExtension();
-        // dd($filename);
 
-        request()->file('image_at')->storeAs('public/images/user_icon', $filename);
+        if (array_key_exists('image_at', $data)) {
+            // dd($data['image_at']->getClientOriginalName());
+            //値がnullかつ空でない時にtrue
 
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'image_at' => $filename,
-            'password' => Hash::make($data['password']),
-        ]);
+            //
+            $filename = Str::random(20) . '.' . pathinfo($data['image_at']->getClientOriginalName(), PATHINFO_EXTENSION);
+            // image_atがある時の保存
+            request()->file('image_at')->storeAs('public/images/user_icon', $filename);
+
+            // dd($filename);
+            return User::create([
+                'name' => $data['name'],
+                'email' => $data['email'],
+                'password' => Hash::make($data['password']),
+                'image_at' => $filename,
+                // 'image_at' => 'user_icon_sample_1.png' ,
+            ]);
+        } else {
+            // image_atがカラの時は、name,email,passwordのみを保存する。
+            return User::create([
+                'name' => $data['name'],
+                'email' => $data['email'],
+                'password' => Hash::make($data['password']),
+            ]);
+        }
     }
 }
