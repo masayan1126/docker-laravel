@@ -38,6 +38,10 @@ Route::get('/edit', function () {
 Route::get('/mypage', function () {
     return view('mypage');
 });
+Route::get('/users/mypage2', function () {
+    return view('users.mypage2');
+});
+
 
 Route::get('/post', function () {
     return view('post');
