@@ -35,7 +35,7 @@
                             </div>
                             <label class="select-icon">
                                 <input type="file" name="image_at" multiple='multiple' class="form-control create-image" style="display:none">
-                                elect a File
+                                Select a File
                             </label>
 
                         </div>

@@ -32,6 +32,7 @@ class RegisterController extends Controller
      * @var string
      */
     protected $redirectTo = RouteServiceProvider::HOME;
+    // protected $redirectTo = "posts/mypage/{$user_id}";
 
     /**
      * Create a new controller instance.
@@ -67,8 +68,8 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        // このcontrollerは通常vendor側で処理をされるので、Requestは使えない
-        // Requestを処理する場合はすべて実装する必要が合える。
+        // このcontrollerは通常vendor側(module)で処理をされるので、Requestは使えない
+        // Request $request を $dataへ返している。
         // vendorファイルの場所--> vendor\laravel\ui\auth-backend\RegistersUsers.php
 
         // dd($data);
@@ -88,7 +89,6 @@ class RegisterController extends Controller
                 'email' => $data['email'],
                 'password' => Hash::make($data['password']),
                 'image_at' => $filename,
-                // 'image_at' => 'user_icon_sample_1.png' ,
             ]);
         } else {
             // image_atがカラの時は、name,email,passwordのみを保存する。
