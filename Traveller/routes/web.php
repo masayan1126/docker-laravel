@@ -54,3 +54,8 @@ Route::get('/header', function () {
 Route::get('/commentCreate', function () {
     return view('commentCreate');
 });
+
+Route::get('posts{post_id}/likes', 'LikeController@store');
+
+Route::get('likes/{like_id}', 'LikeController@destroy');
+
