@@ -91,8 +91,8 @@
                     <img class="mypage-posted-image" src="{{ asset('images/posted_3.png') }}" alt="">
                 </div>
             </a>
-        </div> --}}
-    </div>
+        </div> 
+    </div>--}}
                 
     @endforeach
 </section>
