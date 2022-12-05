@@ -13,7 +13,7 @@ class PostController extends Controller
     {
         $posts = Post::all();
         // dd($posts);
-        return view('post', ['post' => $posts]);
+        return view('post', compact('posts'));
     }
 
     public function create()
@@ -40,14 +40,14 @@ class PostController extends Controller
         // viewのページ直したらdd使って確認してみる
         $post = Post::find($id);
 
-        return view('show', ['post'=>$post]);
+        return view('show', compact('post'));
     }
 
     public function edit($id)
     {
         // editページの編集が終わったらddで確認
         $post = Post::find($id);
-        return view('edit', ['post'=>$post]);
+        return view('edit', compact('post'));
     }
 
     public function update(Request $request, $id)
@@ -60,7 +60,7 @@ class PostController extends Controller
 
         $post -> save();
 
-        return view('show', ['post'=>$post]);
+        return view('show', compact('post'));
     }
 
     public function destroy($id)
