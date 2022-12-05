@@ -1,5 +1,9 @@
 @extends('layouts/app')
     {{-- <link rel="stylesheet" href="{{ asset('/css/show.css') }}"> --}}
+    <head>
+        {{-- <link rel="dns-prefetch" href="//fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    </head> --}}
 
 @section('content')
 
@@ -48,12 +52,12 @@
         <div class="Likes-button">
             
             @if($post->likedBy(Auth::user())->count() > 0)
-            <a data-remote="true" rel="nofollow" data-method="DELETE" href="/likes/{{ $post->likedBy(Auth::user())->firstOrfail()->id }}"><img class="Likes-icon" src="images/Likes-icon.png" alt=""></a>
+            <a data-remote="true" rel="nofollow" data-method="DELETE" href="/likes/{{ $post->likedBy(Auth::user())->firstOrfail()->id }}">いいね取り消し</a>
             @else
-            <a data-remote="true" rel="nofollow" data-method="POST" href="/posts/{{ $post->id }}/likes"></a>
+            <a data-remote="true" rel="nofollow" data-method="POST" href="/posts/{{ $post->id }}/likes"><img class="Likes-icon" src="images/Likes-icon.png" alt=""></a>
             @endif
             {{ $post->likes->count() }}
-            <p class="Likes">20likes</p>
+            <p class="Likes">likes</p>
         </div>
 
         {{-- 5．コメントの表示 --}}
@@ -86,3 +90,4 @@
 </main>
     
 @endsection
+<img class="Likes-icon" src="images/Likes-icon.png" alt="">
