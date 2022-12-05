@@ -25,22 +25,24 @@
                 <div class="mypage-country-name-label"><p>New Post</p></div>
                 <div class="mypage-posted-image-box">
                     <img class="mypage-posted-image" src="{{ asset('images/img-create-btn.png') }}" alt="new post">
-                    {{dd($posts)}}
+                    {{-- {{ dd($posts) }} --}}
                     {{-- {{ Post::post()->(Auth::user()->id) }} --}}
                 </div>
             </a>
         </div>
         {{-- ここから下がループ --}}
+        @foreach ($posts as $post)
+
         <div class="mypage-content-card">
             <a href="#">
-                <div class="mypage-country-name-label"><p>Canada</p></div>
+                <div class="mypage-country-name-label"><p>{{$post->country_name}}</p></div>
                 <div class="mypage-posted-image-box">
-                    <img class="mypage-posted-image" src="{{ asset('images/posted_1.png') }}" alt="">
-
+                    <img class="mypage-posted-image" src="{{ asset('images/country_img/'. $post->image_1) }}" alt="">
+                    {{$post->image_1}}
                 </div>
             </a>
         </div>
-        <div class="mypage-content-card">
+        {{-- <div class="mypage-content-card">
             <a href="#">
                 <div class="mypage-country-name-label"><p>Italy</p></div>
                 <div class="mypage-posted-image-box">
@@ -89,8 +91,10 @@
                     <img class="mypage-posted-image" src="{{ asset('images/posted_3.png') }}" alt="">
                 </div>
             </a>
-        </div>
+        </div> --}}
     </div>
+                
+    @endforeach
 </section>
 
 @endsection
