@@ -57,5 +57,5 @@ Route::get('/commentCreate', function () {
 
 Route::get('posts{post_id}/likes', 'LikeController@store');
 
-Route::get('likes{like_id}', 'LikeController@destroy');
+Route::get('likes/{like_id}', 'LikeController@destroy');
 
