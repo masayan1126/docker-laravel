@@ -1,9 +1,9 @@
 @extends('layouts/app')
     {{-- <link rel="stylesheet" href="{{ asset('/css/show.css') }}"> --}}
     <head>
-        {{-- <link rel="dns-prefetch" href="//fonts.gstatic.com">
+        <link rel="dns-prefetch" href="//fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    </head> --}}
+    </head>
 
 @section('content')
 
@@ -52,11 +52,14 @@
         <div class="Likes-button">
             
             @if($post->likedBy(Auth::user())->count() > 0)
-            <a data-remote="true" rel="nofollow" data-method="DELETE" href="/likes/{{ $post->likedBy(Auth::user())->firstOrfail()->id }}">いいね取り消し</a>
+            <a data-remote="true" rel="nofollow" data-method="DELETE" href="/likes/{{ $post->likedBy(Auth::user())->firstOrfail()->id }}"><img class="Likes-icon" src="/images/blacklike.icon.png" alt=""></i>
+            </a>
+            
             @else
-            <a data-remote="true" rel="nofollow" data-method="POST" href="/posts/{{ $post->id }}/likes"><img class="Likes-icon" src="images/Likes-icon.png" alt=""></a>
+            <a data-remote="true" rel="nofollow" data-method="POST" href="/posts/{{ $post->id }}/likes"><img class="Likes-icon" src="/images/Likes-icon.png" alt=""></a> 
+            
             @endif
-            {{ $post->likes->count() }}
+            {{ $post->likes->count() }}/{{ $post->likedBy(Auth::user())->count() }}
             <p class="Likes">likes</p>
         </div>
 
