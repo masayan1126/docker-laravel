@@ -35,8 +35,8 @@ Route::get('/edit', function () {
     return view('edit');
 });
 
-Route::get('/mypage', function () {
-    return view('mypage');
+Route::get('/users/mypage', function () {
+    return view('users.mypage');
 });
 
 Route::get('/post', function () {
