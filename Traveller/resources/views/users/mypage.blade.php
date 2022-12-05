@@ -37,8 +37,7 @@
             <a href="{{ route('posts.show', $post->id ) }}">
                 <div class="mypage-country-name-label"><p>{{$post->country_name}}</p></div>
                 <div class="mypage-posted-image-box">
-                    <img class="mypage-posted-image" src="{{ asset('storage/images/country_img/'. $post->image_1) }}" alt="">
-                    {{$post->image_1}}
+                    <img class="mypage-posted-image" src="{{ asset('storage/images/country_img/'. $post->image_1) }}" alt="country picture">
                 </div>
             </a>
         </div>
