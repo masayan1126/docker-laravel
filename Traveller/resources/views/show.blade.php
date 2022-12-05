@@ -46,7 +46,13 @@
 
         {{-- 4.Likes --}}
         <div class="Likes-button">
-            <img class="Likes-icon" src="images/Likes-icon.png" alt="">
+            
+            @if($post->likedBy(Auth::user())->count() > 0)
+            <a data-remote="true" rel="nofollow" data-method="DELETE" href="/likes/{{ $post->likedBy(Auth::user())->firstOrfail()->id }}"><img class="Likes-icon" src="images/Likes-icon.png" alt=""></a>
+            @else
+            <a data-remote="true" rel="nofollow" data-method="POST" href="/posts/{{ $post->id }}/likes"></a>
+            @endif
+            {{ $post->likes->count() }}
             <p class="Likes">20likes</p>
         </div>
 
