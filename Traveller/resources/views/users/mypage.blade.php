@@ -92,9 +92,13 @@
                 </div>
             </a>
         </div> 
-    </div>--}}
+--}}
                 
     @endforeach
-</section>
+    </div>
 
+</section>
+<div class="mt-1 mb-1 row justify-content-center">
+    {{ $posts->links() }}
+</div>
 @endsection

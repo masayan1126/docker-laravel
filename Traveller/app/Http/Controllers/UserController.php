@@ -11,7 +11,7 @@ class UserController extends Controller
 {
     public function mypage()
     {
-        $posts = Post::where('user_id', Auth::id())->get();
+        $posts = Post::where('user_id', Auth::id())->paginate(5);
         // echo $posts;
         return view('users.mypage', ['posts'=>$posts]);
     }
