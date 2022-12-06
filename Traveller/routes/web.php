@@ -44,9 +44,9 @@ Route::get('/edit', function () {
 //     return view('post');
 // });
 
-Route::get('/show', function () {
-    return view('show');
-});
+// Route::get('/show', function () {
+//     return view('posts/show');
+// });
 
 Route::get('/header', function () {
     return view('layouts/app');
@@ -76,6 +76,6 @@ Route::put('/post/{id}', 'PostController@update')->name('posts.update');
 
 Route::delete('/post/{id}', 'PostController@destroy')->name('posts.destroy');
 
-Route::get('posts{post_id}/likes', 'LikeController@store');
+Route::get('posts/{post_id}/likes', 'LikeController@store');
 
 Route::get('likes/{like_id}', 'LikeController@destroy');
