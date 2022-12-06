@@ -59,7 +59,7 @@
             <a data-remote="true" rel="nofollow" data-method="POST" href="/posts/{{ $post->id }}/likes"><img class="Likes-icon" src="/images/Likes-icon.png" alt=""></a> 
             
             @endif
-            {{ $post->likes->count() }}/{{ $post->likedBy(Auth::user())->count() }}
+            {{ $post->likes->count() }}
             <p class="Likes">likes</p>
         </div>
 
@@ -78,13 +78,13 @@
 
         {{-- 6.編集ボタン --}}
         <div class="edit-button">
-            <img class="edit-icon" src="images/edit-icon.png" alt="">
+            <img class="edit-icon" src="/images/edit-icon.png" alt="">
             <button class="edit">Edit</button>
         </div>
 
         {{-- 7.削除ボタン --}}
         <div class="delete-button">
-            <img class="delete-icon" src="images/delete-icon.png" alt="">
+            <img class="delete-icon" src="/images/delete-icon.png" alt="">
             <button class="delete">Delete</button>
         </div>
 
