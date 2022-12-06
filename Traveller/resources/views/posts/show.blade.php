@@ -60,7 +60,7 @@
             
             @endif
             {{ $post->likes->count() }}
-            <p class="Likes">likes</p>
+            <p style="font-size:20px">likes</p>
         </div>
 
         {{-- 5．コメントの表示 --}}

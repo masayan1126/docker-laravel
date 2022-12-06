@@ -28,7 +28,7 @@
             
             @endif
             {{ $post->likes->count() }}
-            <p class="Likes">likes</p>
+            <p style="font-size:20px">likes</p>
         </div>
         <section class="showpage-comment">
             <div class="comment-content">
