@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,9 +36,9 @@ Route::get('/edit', function () {
     return view('edit');
 });
 
-Route::get('/mypage', function () {
-    return view('mypage');
-});
+// Route::get('/users/mypage', function () {
+//     return view('users.mypage');
+// });
 
 // Route::get('/post', function () {
 //     return view('post');
@@ -55,8 +56,11 @@ Route::get('/commentCreate', function () {
     return view('commentCreate');
 });
 
+
 // 下記にコントローラーを経由したルーティングを記載して下さい
 // 同じURLを指定する場合は上記に記載されたview作成ようの仮ルーティングをコメントアウトして下さい
+
+Route::get('users/mypage', 'UserController@mypage')->name('users.mypage');
 
 Route::get('/post', 'PostController@index')->name('posts.index');
 
@@ -75,4 +79,3 @@ Route::delete('/post/{id}', 'PostController@destroy')->name('posts.destroy');
 Route::get('posts{post_id}/likes', 'LikeController@store');
 
 Route::get('likes/{like_id}', 'LikeController@destroy');
-
