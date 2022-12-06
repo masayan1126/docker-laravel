@@ -12,7 +12,7 @@
                     <p class="write-comment">leave a comment</p>
                 </div>
             </div>
-
+            <input type="hidden" name="post_id" value="{{ $post_id }}" >
         {{-- コメントテキスト--}}
             <div class="comment-box">
                 <div class="comment-create-text">

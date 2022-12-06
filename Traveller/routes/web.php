@@ -80,8 +80,8 @@ Route::get('posts{post_id}/likes', 'LikeController@store');
 
 Route::get('likes/{like_id}', 'LikeController@destroy');
 
-Route::get('comments/commentCreate/{post_id}', 'CommentController@create')->name("comments.create"); // // comments create : コメントページの表示
+Route::get('comments/create/{post_id}', 'CommentController@create')->name("comments.create"); 
 
-Route::post('comments/commentCreate', 'CommentController@store')->name("comments.store"); // comments store : コメントの保存
+Route::post('comments/store', 'CommentController@store')->name("comments.store");
 
 
