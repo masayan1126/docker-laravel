@@ -52,9 +52,9 @@ Route::get('/header', function () {
     return view('layouts/app');
 });
 
-Route::get('/commentCreate', function () {
-    return view('commentCreate');
-});
+// Route::get('/commentCreate', function () {
+//     return view('commentCreate');
+// });
 
 
 // 下記にコントローラーを経由したルーティングを記載して下さい
@@ -79,3 +79,8 @@ Route::delete('/post/{id}', 'PostController@destroy')->name('posts.destroy');
 Route::get('posts{post_id}/likes', 'LikeController@store');
 
 Route::get('likes/{like_id}', 'LikeController@destroy');
+
+Route::get('comments/commentCreate/{post_id}', 'CommentController@create')->name('comments.create'); // // comments create : コメント表示
+
+Route::post('comments/commentCreate', 'CommentController@store')->name('comments.store'); // comments store : コメント保存
+
