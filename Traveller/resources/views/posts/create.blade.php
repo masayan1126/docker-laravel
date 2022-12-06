@@ -11,27 +11,27 @@
             <p class="create-select-country-question">
                 Select a country
             </p>
-            <select name="create_country" id="create-country">
+            <input type="text" name="country_name" id="country_name" value="" placeholder="国名を入力して下さい">
+            {{-- <select name="create_country" id="create-country">
                 <option value="データベースから国名を持ってくる">データベースから国名を持ってくる</option>
                 <option value="america">例)アメリカ</option>
                 <option value="filipine">例）フィリピン</option>
                 <option value="chaina">例）中国</option>
-                {{-- 上記のvalueと表示される分の部分はDBに国名を入れた上でそれを引用し、表示できるようにする --}}
-            </select>
+            </select> --}}
         </div>
 
         <div class="create-select-picture">
             <p class="create-select-picture-question">
                 Select picture
             </p>
-            <input type="file" name="create_image" multiple='multiple' id="create-image">
+            <input type="file" name="image_1" multiple='multiple' id="create-image">
         </div>
 
         <div class="create-write-caption">
             <p class="create-write-caption-question">
                 Write a caption
             </p>
-            <textarea name="create_caption" id="create-caption" cols="30" rows="10" placeholder="内容を入力してください"></textarea>
+            <textarea name="caption" id="create-caption" cols="30" rows="10" placeholder="内容を入力してください"></textarea>
         </div>
         <div class="create-post-button">
             <button type="submit">Create</button>

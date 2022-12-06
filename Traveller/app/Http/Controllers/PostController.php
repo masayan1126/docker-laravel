@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Post;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Str;
 
 use Illuminate\Http\Request;
 
@@ -23,11 +24,17 @@ class PostController extends Controller
 
     public function store(Request $request)
     {
+        $filename = Str::random(20) . '.' . pathinfo($request['image_1']->getClientOriginalName(), PATHINFO_EXTENSION);
+        request()->file('image_1')->storeAs('public/images/country_img', $filename);
+        // $img_at = request()->file('image_1')->getClientOriginalName();
+        // dd($request->file('image_1'));
+        // request()->file('image_1')->storeAs('public/images',$img_at);
+
         // dd($request);
         $post = new Post;
-        $post -> country_name = $request -> create_country;
-        $post -> caption = $request -> create_caption;
-        $post -> image_1 = $request -> create_image;
+        $post -> country_name = $request -> country_name;
+        $post -> caption = $request -> caption;
+        $post -> image_1 = $filename;
         $post -> user_id = Auth::id();
 
         $post -> save();
@@ -53,7 +60,7 @@ class PostController extends Controller
     public function update(Request $request, $id)
     {
         $post = Post::find($id);
-        dd($request->country_name);
+        dd($request->image_1);
 
         $post -> country_name = $request -> country_name;
         $post -> caption = $request -> caption;
@@ -62,7 +69,7 @@ class PostController extends Controller
 
         $post -> save();
 
-        return view('posts/index', compact('post'));
+        return redirect()->route('posts.index');
     }
 
     public function destroy($id)
@@ -70,6 +77,6 @@ class PostController extends Controller
         $post = Post::find($id);
         $post -> delete();
 
-        return redirect()->route('post.index');
+        return redirect()->route('posts.index');
     }
 }

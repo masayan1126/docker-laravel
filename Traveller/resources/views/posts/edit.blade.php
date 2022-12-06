@@ -12,7 +12,7 @@
             {{-- １．アイコンとユーザーネーム --}}
             <section class="icon-name-box">
                 <div class="icon-user-name">
-                    <form action="" method="POST">アイコン😊（仮）</form>
+                    <img src="" alt="">
                     <p class="edit-user-name">User Name（仮）</p>
                 </div>
             </section>
@@ -36,13 +36,13 @@
                 <div class="change-pictures">
                     <p class="edit-select-picture-question">Change your files</p>
                 </div>
-                <div>
+                {{-- <div>
                     <img src="{{ asset('images/country_img/' . $post->image_1) }}" alt="投稿済みの画像">
-                </div>
+                </div> --}}
                 <div class="select-pictures">
                     {{-- ファイルを消す＋追加する（最低１枚・上限５枚） --}}
                     <label class="file">
-                        <input type="file" name="edit-image" multiple='multiple' id="edit-image" style="display:none">
+                        <input type="file" name="image_1" multiple='multiple' id="edit-image" style="display:none">
                         Select files
                     </label>
                 </div>
@@ -54,7 +54,7 @@
                     <p class="edit-write-caption-question">Edit a caption</p>
                 </div>
                 <div class="write-caption">
-                    <textarea name="edit-caption" id="edit-caption" cols="30" rows="10">{{ $post->caption }}</textarea>
+                    <textarea name="caption" id="edit-caption" cols="30" rows="10">{{ $post->caption }}</textarea>
                 </div>
             </section>
             
