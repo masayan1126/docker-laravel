@@ -27,9 +27,9 @@
             <div class="country-content">
                 <div class="show-country">
                     <a href="#">
-                        <div class="showpage-country-name"><p>Canada</p></div>
+                        <div class="showpage-country-name"><p>{{ $post->country_name }}</p></div>
                         <div class="showpage-posted-files-box">
-                            <img class="showpage-posted-files" src="{{ asset('images/posted_1.png') }}" alt="">
+                            <img class="showpage-posted-files" src="{{ asset('images/country_img/' . $post->image_1) }}" alt="投稿済みの画像">
                         </div>
                     </a>
                 </div>
@@ -39,7 +39,7 @@
         <section class="showpage-caption">
             <div class="caption-content">
                 <a href="#">
-                    <p class="caption">キャプション</p>
+                    <p class="caption">{{ $post->caption }}</p>
                 </a>
             </div> 
         </section>

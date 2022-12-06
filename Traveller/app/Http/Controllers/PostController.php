@@ -37,7 +37,7 @@ class PostController extends Controller
 
     public function show($id)
     {
-        // viewのページ直したらdd使って確認してみる
+        // dd($id);
         $post = Post::find($id);
 
         return view('posts/show', compact('post'));
@@ -53,14 +53,16 @@ class PostController extends Controller
     public function update(Request $request, $id)
     {
         $post = Post::find($id);
+        dd($request->country_name);
 
-        $post -> country_name = $request -> create_country;
-        $post -> caption = $request -> create_caption;
-        $post -> image_1 = $request -> create_image;
+        $post -> country_name = $request -> country_name;
+        $post -> caption = $request -> caption;
+        $post -> image_1 = $request -> image_1;
+        // dd($post);
 
         $post -> save();
 
-        return view('posts/show', compact('post'));
+        return view('posts/index', compact('post'));
     }
 
     public function destroy($id)

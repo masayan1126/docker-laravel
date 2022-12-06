@@ -31,21 +31,21 @@ Route::get('/top', function () {
 //     return view('create');
 // });
 
-Route::get('/edit', function () {
-    return view('edit');
-});
+// Route::get('/edit', function () {
+//     return view('edit');
+// });
 
 Route::get('/mypage', function () {
-    return view('mypage');
+    return view('users/mypage');
 });
 
 // Route::get('/post', function () {
 //     return view('post');
 // });
 
-Route::get('/show', function () {
-    return view('show');
-});
+// Route::get('/show', function () {
+//     return view('show');
+// });
 
 Route::get('/header', function () {
     return view('layouts/app');
