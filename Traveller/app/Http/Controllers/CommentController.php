@@ -10,34 +10,30 @@ use Illuminate\Support\Facades\Auth;
 
 class CommentController extends Controller
 {
+
     public function create($post_id)
     {
         // dd($post_id);
-        return view("comments.create", ["post_id" => $post_id]);
+        return view("comments/commentCreate", ["post_id" => $post_id]);
     }
 
     public function store(Request $request)
     {
         // dd($request);
         $request->validate([
-            "body" => ["required", "string"],
+            "comment_text" => ["required", "string"],
         ]);
 
         $comment = new Comment();
         // 左辺:テーブル、右辺が送られてきた値(fromから送られてきたnameが入っている)
         // モデルインスタンス->カラム名 = $request->name;
-        $comment->body = $request->body;
+        $comment->comment_text = $request->comment_text;
         $comment->post_id = $request->post_id;
-
         $comment->user_id = Auth::id(); //ログイン中のユーザーのidを返す。
 
-        //post_id BIGINT NO
+        $comment->save();  //save()メソッド：上記の内容をDBに保存
 
-        //save()メソッド：上記の内容をDBに保存
-        $comment->save();
-
-        //showページへリダイレクト
-        return redirect()->route("show", Post::find($comment->post_id)->user_id);
+        return redirect()->route("posts/show", Post::find($comment->post_id)->user_id); //showページへリダイレクト
 
     }
 
