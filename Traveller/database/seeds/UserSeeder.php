@@ -17,28 +17,28 @@ class UserSeeder extends Seeder
     {
         User::create([
             'name' => 'Yoshiki' ,
-            'email' => 'Yoshiki@travel.com' ,
+            'email' => 'yoshiki@traveller.com' ,
             'password' => Hash::make('YoshikiYoshiki'),
             'image_at' => '31GOK9FfTgZd2RrjBuZ8.png' ,
         ]);
 
         User::create([
             'name' => 'Noriho' ,
-            'email' => 'Noriho@travel.com' ,
+            'email' => 'noriho@traveller.com' ,
             'password' => Hash::make('NorihoNoriho'),
             'image_at' => 'vH3PXHj5llOYguNNLg35.png' ,
         ]);
 
         User::create([
             'name' => 'Serika' ,
-            'email' => 'Serika@travel.com' ,
+            'email' => 'serika@traveller.com' ,
             'password' => Hash::make('SerikaSerika'),
             'image_at' => 'LTqApZVzdwwfOWWhCZt3.png' ,
         ]);
 
         User::create([
             'name' => 'Hotaka' ,
-            'email' => 'Hotaka@travel.com' ,
+            'email' => 'hotaka@traveller.com' ,
             'password' => Hash::make('HotakaHotaka'),
             'image_at' => 'weUFwyqeJV8mywnor8eu.png' ,
         ]);
@@ -46,7 +46,7 @@ class UserSeeder extends Seeder
 
         User::create([
             'name' => 'Daiki' ,
-            'email' => 'Daiki@travel.com' ,
+            'email' => 'daiki@traveller.com' ,
             'password' => Hash::make('DaikiDaiki'),
             'image_at' => 'jcQqeYhLvwVenSC4Yooh.png' ,
         ]);
