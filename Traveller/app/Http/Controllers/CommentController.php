@@ -34,7 +34,7 @@ class CommentController extends Controller
         $comment->save();  //save()メソッド：上記の内容をDBに保存
 
         // dd($comment->id);
-        return redirect()->route("posts.show", Post::find($comment->post_id)->user_id); //showページへリダイレクト
+        return redirect()->route("posts.show", $request->post_id); //showページへリダイレクト
 
     }
 
