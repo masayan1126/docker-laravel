@@ -2,6 +2,7 @@
 <head>
     <link rel="stylesheet" href="{{ asset('/css/post.css') }}">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    {{-- <script type="text/javascript" src="post.js"></script> --}}
 </head>
 @section('content')
 <main>
@@ -11,7 +12,25 @@
             <p class="post-username">○ User Nmae</p>
         </div>
         <p class="post-countryname">{{ $post->country_name }}</p>
-        <a href=""><img src="{{ asset('images/country_img/' . $post->image_1) }}" alt="画像" width="240" height="135"></a>
+        <div class="post-images">
+            <img src="{{ asset('images/country_img/' . $post->image_1) }}" onclick="image_change()" alt="画像" width="240" height="135" id="image_change">
+            {{-- <script>
+                var img_1 = {{ asset('images/country_img/' . $post->image_1) }};
+                var img_src = new Array(img_1,{{ asset('images/country_img/' . $post->image_2) }}”,”{{ asset('images/country_img/' . $post->image_3) }}”,”{{ asset('images/country_img/' . $post->image_4) }}”,”{{ asset('images/country_img/' . $post->image_5) }}”);
+                var i = 0;
+
+                function image_change() {
+
+                    if (i == 4) {
+                    i = 0;
+                    } else {
+                    i ++;
+                    }
+                    document.getElementById(“image_change”).src = img_src[i];
+                }
+            </script> --}}
+        </div>
+        
         <div class="post-commentbox">
             <input type="checkbox" id="post-readmore" class="post-readmore">
             <label for="post-readmore" class="post-readmore-btn" style="opacity:0.5">read more</label>

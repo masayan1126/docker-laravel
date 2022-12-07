@@ -5,8 +5,9 @@
 
 <main>
     <div class="show-allpage">
-        <form action=" " method="POST" enctype="multipart/form-data">
+        <form action="#" method="POST">
         @csrf
+        @method('delete')
 
         {{-- １．アイコンとユーザーネーム --}}
         <section class="showpage-userName">
@@ -38,9 +39,9 @@
         {{-- 3.キャプションの表示 --}}
         <section class="showpage-caption">
             <div class="caption-content">
-                <a href="#">
+                {{-- <a href="#"> --}}
                     <p class="caption">{{ $post->caption }}</p>
-                </a>
+                {{-- </a> --}}
             </div> 
         </section>
 
@@ -72,13 +73,13 @@
         {{-- 6.編集ボタン --}}
         <div class="edit-button">
             <img class="edit-icon" src="images/edit-icon.png" alt="">
-            <button class="edit">Edit</button>
+            <button class="edit"><a href="{{ route('posts.edit',$post->id) }}">edit</a></button>
         </div>
 
         {{-- 7.削除ボタン --}}
         <div class="delete-button">
             <img class="delete-icon" src="images/delete-icon.png" alt="">
-            <button class="delete">Delete</button>
+            <input type="submit" value="Delete" class="delete" onclick="return confirm('本当に削除しますか？');">
         </div>
 
         </form>
