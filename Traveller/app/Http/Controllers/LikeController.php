@@ -21,7 +21,8 @@ class LikeController extends Controller
     public function destroy(Request $request)
     {
         $like = Like::find($request->like_id);
+        // echo $like;
         $like->delete();
-        return redirect('/show');
+        return back();
     }
 }

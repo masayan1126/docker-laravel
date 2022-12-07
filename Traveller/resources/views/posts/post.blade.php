@@ -36,9 +36,18 @@
             <label for="post-readmore" class="post-readmore-btn" style="opacity:0.5">read more</label>
             <div class="post-readmore-text">{{ $post->caption }}</div>
         </div>
-        <div class="post-Likes-button" id="post-Likes-button">
-            <img class="Likes-icon" src="images/Likes-icon.png" alt="">
-            <p class="Likes">20likes</p>
+        <div class="Likes-button">
+            
+            @if($post->likedBy(Auth::user())->count() > 0)
+            <a data-remote="true" rel="nofollow" data-method="DELETE" href="/likes/{{ $post->likedBy(Auth::user())->firstOrfail()->id }}"><img class="Likes-icon" src="/images/blacklike.icon.png" alt=""></i>
+            </a>
+            
+            @else
+            <a data-remote="true" rel="nofollow" data-method="POST" href="/posts/{{ $post->id }}/likes"><img class="Likes-icon" src="/images/Likes-icon.png" alt=""></a> 
+            
+            @endif
+            {{ $post->likes->count() }}
+            <p style="font-size:20px">likes</p>
         </div>
         <section class="showpage-comment">
             <div class="comment-content">
