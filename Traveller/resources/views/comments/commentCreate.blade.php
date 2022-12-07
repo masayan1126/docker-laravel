@@ -1,5 +1,8 @@
 @extends('layouts/app')
     {{-- <link rel="stylesheet" href="{{ asset('/css/edit.css') }}"> --}}
+    <head>
+        <link href="{{ asset('css/commentCreate.css') }}" rel="stylesheet" >
+    </head>
 @section('content')
 
 <main>

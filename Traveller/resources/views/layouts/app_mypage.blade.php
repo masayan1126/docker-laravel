@@ -25,7 +25,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="mypage_button" href="{{ ('/') }}">
+                <a class="mypage_button" href="{{ route('posts.index') }}">
                     <img class="app-mypage-cheching-img" src="{{ asset('images/checking_posts.svg') }}" alt="">
                     CheckingPosts
                 </a>
