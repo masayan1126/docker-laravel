@@ -32,9 +32,9 @@ Route::get('/top', function () {
 //     return view('create');
 // });
 
-Route::get('/edit', function () {
-    return view('edit');
-});
+// Route::get('/edit', function () {
+//     return view('edit');
+// });
 
 // Route::get('/users/mypage', function () {
 //     return view('users.mypage');
