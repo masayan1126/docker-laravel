@@ -55,24 +55,26 @@
 }
 
 
+.register-btn{
+    position: fixed;
+    right: 78px;
+    bottom:83px;
+}
 
-
-.btn.btn-primary {
+.btn-primary {
     color: black;
     font-size: 20px;
     font-family: 'Itim', cursive;
     border: none;
     background: transparent;
     outline: none;
-    position: absolute;
-	top: 570px;
-	left: 760px;
-    display: flex; 
 }
 
 img.register-logo {
     height: 30px;
 }
+
+
 
 #register-name.form-control {
     border-radius: 0;
@@ -90,8 +92,7 @@ img.register-logo {
 
 #register-email.form-control {
     border-radius: 0;
-    border: 1px solid; 
-    
+    border: 1px solid;
 }
 
 
