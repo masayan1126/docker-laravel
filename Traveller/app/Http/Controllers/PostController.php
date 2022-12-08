@@ -1,7 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Post;
+use App\Like;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 
@@ -39,7 +41,7 @@ class PostController extends Controller
         // request()->file('image_1')->storeAs('public/images',$img_at);
 
         // dd($request);
-        $post = new Post;
+        $post = new Post();
         $post -> country_name = $request -> country_name;
         $post -> caption = $request -> caption;
         $post -> image_1 = $filename1;
@@ -86,6 +88,9 @@ class PostController extends Controller
 
     public function destroy($id)
     {
+        // $likes = Like::where('post_id', $id);
+        // $likes->delete();
+
         $post = Post::find($id);
         $post -> delete();
 
