@@ -44,3 +44,9 @@
 main{
     background-color: white;
 }
+
+.create-post-button{
+    position:fixed;
+    right:240px;
+    bottom:50px;
+}
