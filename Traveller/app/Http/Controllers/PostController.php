@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Post;
 use App\Like;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
 
 use Illuminate\Http\Request;
@@ -88,11 +89,10 @@ class PostController extends Controller
 
     public function destroy($id)
     {
-        // $likes = Like::where('post_id', $id);
-        // $likes->delete();
-
+        Schema::disableForeignKeyConstraints();
         $post = Post::find($id);
         $post -> delete();
+        Schema::enableForeignKeyConstraints();
 
         return redirect()->route('posts.index');
     }
