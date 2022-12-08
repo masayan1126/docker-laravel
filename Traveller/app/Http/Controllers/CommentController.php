@@ -10,6 +10,13 @@ use Illuminate\Support\Facades\Auth;
 
 class CommentController extends Controller
 {
+    // public function index()
+    // {
+    //     $comments = Comment::all();
+    //     // dd($posts);
+    //     $comments = Comment::orderBy('created_at', 'desc')->get();
+    //     return view('posts/show', compact('comments'));
+    // }
 
     public function create($post_id)
     {
