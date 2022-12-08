@@ -1,0 +1,105 @@
+.register-name {
+    font-size: 25px;
+    font-family: 'Itim', cursive;
+    margin: 50px;
+    
+}
+
+.create-select-picture {
+    display: flex;
+}
+
+.create-select-picture-question {
+    font-size: 25px;
+    font-family: 'Itim', cursive;
+    margin-left: 30px;
+}
+
+.select-icon {
+    font-size: 10px;
+    font-family: 'Itim', cursive;
+    margin-left: 212px;
+    border: 1px solid;
+    padding: 0 10px 0 10px;
+}
+
+
+.select-icon {
+    font-size: 25px;
+    font-family: 'Itim', cursive;
+
+}
+
+
+.register-email {
+    font-size: 25px;
+    font-family: 'Itim', cursive;
+    margin: 50px;
+    
+}
+
+.register-password {
+    font-size: 25px;
+    font-family: 'Itim', cursive;
+    margin: 50px;
+}
+
+.register-password-confirm {
+    font-size: 25px;
+    font-family: 'Itim', cursive;
+    margin: 50px;
+}
+
+.form-control {
+    margin: 50px;
+}
+
+
+
+
+.btn.btn-primary {
+    color: black;
+    font-size: 20px;
+    font-family: 'Itim', cursive;
+    border: none;
+    background: transparent;
+    outline: none;
+    position: absolute;
+	top: 570px;
+	left: 760px;
+    display: flex; 
+}
+
+img.register-logo {
+    height: 30px;
+}
+
+#register-name.form-control {
+    border-radius: 0;
+    border: 1px solid; 
+    margin-left: 160px;
+}
+
+#register-password.form-control {
+    margin-left: 125px;
+    border-radius: 0;
+    border: 1px solid; 
+    
+}
+
+
+#register-email.form-control {
+    border-radius: 0;
+    border: 1px solid; 
+    
+}
+
+
+
+#register-password-confirm.form-control {
+    border-radius: 0;
+    border: 1px solid; 
+    margin-left: 25px;
+    
+}
+

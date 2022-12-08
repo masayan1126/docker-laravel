@@ -1,0 +1,49 @@
+
+
+.login-email {
+    font-size: 25px;
+    font-family: 'Itim', cursive;
+    margin: 50px;
+    
+}
+
+.login-password {
+    font-size: 25px;
+    font-family: 'Itim', cursive;
+    margin: 50px;
+}
+
+.form-control {
+    margin: 50px;
+}
+
+.btn.btn-primary {
+    color: black;
+    font-size: 20px;
+    font-family: 'Itim', cursive;
+    border: none;
+    background: transparent;
+    outline: none;
+    position: absolute;
+	top: 400px;
+	right: 25px;
+    display: flex;
+}
+
+.login-logo {
+    height: 30px;
+}
+
+#login-password.form-control {
+    margin-left: 120px;
+    border-radius: 0;
+    border: 1px solid; 
+    
+}
+
+
+#login-email.form-control {
+    border-radius: 0;
+    border: 1px solid; 
+    
+}
