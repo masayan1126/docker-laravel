@@ -16,7 +16,7 @@
     <div class="top-main">
         <div class="top-right">
         @auth
-            <a href="{{ url('/home') }}">Home</a>
+            <a href="{{ url('/users/mypage') }}">My Page</a>
         @else
             <a href="{{ route('login') }}"><img class="header-login-logo"src="./images/loginicon.png" alt="">Login</a>
             
