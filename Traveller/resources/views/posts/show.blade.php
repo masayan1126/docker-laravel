@@ -19,10 +19,10 @@
             <div class="icon-userName">
                 <ul class="showpage-show-name-list">
                     <li>
-                        <img class="mypage-smile-icon" src="{{ asset('storage/images/user_icon/' . Auth::user()->image_at) }}"  alt="simle icon"> {{-- アイコン --}}
+                        <img class="mypage-smile-icon" src="{{ asset('images/smile.svg') }}"  alt="simle icon"> {{-- アイコン --}}
                     </li>
                     <li>
-                        {{ Auth::user()->name}} {{-- User Name --}}
+                        User Name  {{-- User Name --}}
                     </li>
                 </ul>
             </div>
@@ -35,7 +35,7 @@
                     <a href="#">
                         <div class="showpage-country-name"><p>{{ $post->country_name }}</p></div>
                         <div class="showpage-posted-files-box">
-                            <img class="showpage-posted-files" src="{{ asset('storage/images/country_img/' . $post->image_1) }}" alt="投稿済みの画像">
+                            <img class="showpage-posted-files" src="{{ asset('images/country_img/' . $post->image_1) }}" alt="投稿済みの画像">
                         </div>
                     </a>
                 </div>
