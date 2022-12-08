@@ -25,8 +25,8 @@
 
         {{-- コメントボタン --}}
             <div class="comment-button">
-                <img class="comment-icon" src="images/comment-icon.png" alt="">
-                <button type="submit">Comment Now</button>
+                <img class="comment-icon" src="/images/comment-icon.png" alt="">
+                <button class="comment-now-btn" type="submit">Comment Now</button>
             </div>
         </form>
     </div>
