@@ -1,3 +1,7 @@
+main{
+    font-family: 'Itim', cursive;
+}
+
 .post-box{
     border: 1px solid black;
     display: flex;
@@ -5,7 +9,9 @@
     text-align: center;
     margin: 30px 500px;
     padding: 10px 0px;
+    
 }
+   
 
 .post-username-box{
     display: flex;

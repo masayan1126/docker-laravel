@@ -5,7 +5,7 @@
     <div class="mypage-name-label-container">
         <ul class="mypage-show-name-list">
             <li>
-                <img class="mypage-smile-icon" src="{{ asset('storage/images/user_icon/' . Auth::user()->image_at) }}" alt="user icon">
+                <img class="mypage-smile-icon" src="{{ asset('storage/images/user_icon/' . Auth::user()->image_at) }}" alt="">
             </li>
             <li>
                 {{ Auth::user()->name}}

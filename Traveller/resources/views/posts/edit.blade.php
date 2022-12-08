@@ -63,7 +63,7 @@
             
             {{-- 5.編集ボタン --}}
             <div class="edit-button">
-                <img class="edit-icon" src="images/edit-icon.png" alt="">
+                <img class="edit-icon" src="/images/edit-icon.png" alt="">
                 <input class="edit" type="submit" form="post-updata" value="edit">
             </div>
         </form>
