@@ -16,11 +16,17 @@ main{
 .post-username-box{
     display: flex;
     text-align: left;
+    font-size: large;
+}
+
+.post-countryname {
+    font-size: 25px;
 }
 
 .post-readmore-text{
     overflow: hidden;
     height: 50px;
+    font-size: 20px;
 }
 
 .post-readmore{
@@ -71,3 +77,15 @@ label{
 .comment{
     font-size: smaller;
 }
+
+.comment-btn{
+    color: black;
+    border-width: 0;
+}
+
+.show-btn{
+    color: black;
+    border-width: 0;
+    
+}
+

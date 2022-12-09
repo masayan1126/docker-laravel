@@ -26,10 +26,10 @@
             </p>
             <div>
                 <input type="file" name="image_1" multiple='multiple' id="create-image"><br><br>
-                <input type="file" name="image_2" multiple='multiple' id="create-image"><br><br>
+                {{-- <input type="file" name="image_2" multiple='multiple' id="create-image"><br><br>
                 <input type="file" name="image_3" multiple='multiple' id="create-image"><br><br>
                 <input type="file" name="image_4" multiple='multiple' id="create-image"><br><br>
-                <input type="file" name="image_5" multiple='multiple' id="create-image"><br><br>
+                <input type="file" name="image_5" multiple='multiple' id="create-image"><br><br> --}}
             </div>
             
         </div>

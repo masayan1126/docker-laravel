@@ -39,9 +39,9 @@
                 <div class="change-pictures">
                     <p class="edit-select-picture-question">Change your files</p>
                 </div>
-                {{-- <div>
-                    <img src="{{ asset('images/country_img/' . $post->image_1) }}" alt="投稿済みの画像">
-                </div> --}}
+                <div>
+                    <img src="{{ asset('storage/images/country_img/' . $post->image_1) }}" alt="投稿済みの画像">
+                </div>
                 <div class="select-pictures">
                     {{-- ファイルを消す＋追加する（最低１枚・上限５枚） --}}
                     <label class="file">
