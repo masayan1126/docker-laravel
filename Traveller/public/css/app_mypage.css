@@ -10953,7 +10953,7 @@ a.text-dark:focus {
 
 .app_title{
   font-size: 2.25rem; 
-  /* margin-left: 50%; */
+  margin-left: 30%;
 }
 .container{
   flex-wrap: none;

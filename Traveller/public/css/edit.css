@@ -3,11 +3,14 @@ main{
     justify-content: center;
     font-family: 'Itim', cursive;
     font-size: larger;
+    width: 50%;
 }
 .edit-allpage{
+    margin-left: 550px;
     margin-top: 10px;
     border: 2px solid black; 
     width: 130%;
+    
 }
 
 /*1*/

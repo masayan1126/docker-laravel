@@ -3,11 +3,14 @@ main{
     justify-content: center;
     font-family: 'Itim', cursive;
     font-size: larger;
+    
 }
 .show-allpage{
     margin-top: 10px;
+    margin-left: 600px;
     border: 2px solid black; 
-    width: 30vw;
+    width: 35vw;
+    
 }
 
 /*1*/
@@ -24,6 +27,7 @@ main{
     padding: 0;
     margin-bottom: 0;
 }
+
 .mypage-smile-icon{
     width: 6vw;
     height: 6vh;

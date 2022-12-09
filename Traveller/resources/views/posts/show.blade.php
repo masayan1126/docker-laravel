@@ -80,13 +80,13 @@
 
         {{-- 6.編集ボタン --}}
         <div class="edit-button">
-            <img class="edit-icon" src="images/edit-icon.png" alt="">
+            <img class="edit-icon" src="/images/edit-icon.png" alt="">
             <button class="edit"><a href="{{ route('posts.edit',$post->id) }}">edit</a></button>
         </div>
 
         {{-- 7.削除ボタン --}}
         <div class="delete-button">
-            <img class="delete-icon" src="images/delete-icon.png" alt="">
+            <img class="delete-icon" src="/images/delete-icon.png" alt="">
             <input type="submit" value="Delete" class="delete" onclick="return confirm('本当に削除しますか？');">
         </div>
 
