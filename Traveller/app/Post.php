@@ -23,6 +23,12 @@ class Post extends Model
     {
         return Like::where('user_id', $user->id)->where('post_id', $this->id);
     }
+    public function CommentBy()
+    {
+        return Comment::where('post_id', $this->id)->orderBy('created_at', 'DESC')->take(3)->get();
+    }
+
+
 
     // リレーション先の子データを削除
     public static function boot()
