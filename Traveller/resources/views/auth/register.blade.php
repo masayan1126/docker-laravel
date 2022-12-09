@@ -81,7 +81,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="register-btn">
-                                <button type="submit" class="btn btn-primary"> <img class="register-logo"src="./css/registericon.png" alt="">
+                                <button type="submit" class="btn-primary"> <img class="register-logo"src="./css/registericon.png" alt="">
                                     {{ __('Register') }}
                                 </button>
                             </div>

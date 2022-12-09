@@ -14,14 +14,16 @@ main{
 }
 /*コメントテキスト*/
 .comment-create-text{
+    display: flex;
+    justify-content: center;
 
 }
 
 /*コメントボタン*/
 .comment-button{
     position:fixed;
-    right:240px;
-    bottom:50px;
+    right:260px;
+    bottom:90px;
 }
 
 .comment-icon{
@@ -29,9 +31,10 @@ main{
     height: 27px;
 }
 
-.comment{
-    outline: none;
+.comment-now-btn{
+    font-size: 20px;
+    font-family: 'Itim', cursive;
     border: none;
-    font-size: larger;
-    background-color: transparent;
+    background: transparent;
+    color: black;
 }

@@ -14,9 +14,9 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Auth::routes();
 
@@ -24,7 +24,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 /* view作成用の仮のルーティング */
 
-Route::get('/top', function () {
+Route::get('/', function () {
     return view('top');
 });
 
@@ -80,8 +80,6 @@ Route::get('posts/{post_id}/likes', 'LikeController@store');
 
 Route::get('likes/{like_id}', 'LikeController@destroy');
 
-Route::get('comments/create/{post_id}', 'CommentController@create')->name("comments.create"); 
+Route::get('comments/create/{post_id}', 'CommentController@create')->name("comments.create");
 
 Route::post('comments/store', 'CommentController@store')->name("comments.store");
-
-

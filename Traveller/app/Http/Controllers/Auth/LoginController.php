@@ -42,6 +42,6 @@ class LoginController extends Controller
 
     protected function loggedOut(Request $request)
     {
-        return redirect('/top'); // topページへ移動
+        return redirect('/'); // topページへ移動
     }
 }
